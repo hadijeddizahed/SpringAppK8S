@@ -1,8 +1,8 @@
-replicaCount: 2
+replicaCount: 1
 
 image:
   repository: spring-app-k8s
-  tag: 1.7.0
+  tag: 1.8.0
   pullPolicy: IfNotPresent
 
 service:
