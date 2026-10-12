@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: ghcr.io/hadijeddizahed/springappk8s
-  tag: sha-111e343
+  tag: sha-40a8f04
   pullPolicy: IfNotPresent
 
 service:
