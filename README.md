@@ -187,7 +187,8 @@ SpringAppK8S/
         └── templates/
             ├── deployment.yaml              # Deployment manifest with probes, limits, and env injection
             ├── configmap.yaml               # ConfigMap template for environment variables
-            └── service.yaml                 # NodePort Service template
+            ├── service.yaml                 # Internal ClusterIP Service
+            └── ingress.yaml                 # Layer 7 HTTP Routing & Host-based Ingress
 ```
 
 ---

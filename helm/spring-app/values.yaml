@@ -6,9 +6,18 @@ image:
   pullPolicy: IfNotPresent
 
 service:
-  type: NodePort
+  type: ClusterIP
   port: 8080
-  nodePort: 30080
+
+ingress:
+  enabled: true
+  className: nginx
+  annotations: {}
+  hosts:
+    - host: springapp.local
+      paths:
+        - path: /
+          pathType: Prefix
 
 config:
   greetingMessage: "Hello from Spring Boot running in Minikube via Helm ConfigMap!"
